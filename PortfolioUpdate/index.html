@@ -3,32 +3,39 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Khenn Kobe Llanes | Software Engineer</title>
+    <title>Khenn Kobe Llanes | Full Stack Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
     <nav class="navbar">
         <div class="container navbar-content">
-            <span class="logo">Khenn Kobe Llanes</span>
+            <a href="#home" class="navbar-brand text-decoration-none">
+                Khenn Kobe Llanes
+            </a>
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#work">Work</a>
+                <a href="#techstack">Tech Stack</a> 
                 <a href="#contact">Contact</a>
+                <button id="dark-mode-toggle" class="btn secondary-btn border-0 m-0 px-2 py-2 ms-2">🌙</button>
             </div>
         </div>
     </nav>
 
     <header class="hero" id="home">
         <div class="profile-img-container">
-            <img src="your-profile-pic.jpg" alt="Khenn Kobe Llanes" class="profile-img">
+            <img src="kobe.jpeg" alt="Khenn Kobe Llanes" class="profile-img">
         </div>
         
-        <h1 class="hero-headline">Software Engineering & Development for Scalable Systems</h1>
+        <h1 class="hero-headline"> Full Stack Engineer </h1>
+
+        <p class="hero-tagline"> Engineering scalable, high-performance systems from concept to deployment. </p>
         
         <a href="#contact" class="btn primary-btn">LET'S TALK CODE</a>
     </header>
@@ -36,41 +43,45 @@
     <section class="section intro-section">
         <div class="container intro-content">
             
-            <div class="intro-text">
+           <div class="intro-text">
                 <h2 class="greeting">Hi, I'm Kobe!</h2>
                 <p>
-                    I design and build scalable web and mobile applications using modern
-                    frontend frameworks, backend architectures, and cloud technologies. I focus on clean architecture, maintainable codebases, and performance-driven systems.
+                    I design and build scalable web and mobile systems using modern frontend frameworks, backend architectures, and cloud infrastructure.
                 </p>
                 <p>
-                    My work spans from building user-facing interfaces to designing RESTful and GraphQL APIs, managing databases, and deploying services to cloud environments.
-                </p>
-                <p>
-                    *Experienced in full-stack development, API integration, and production-ready deployments.*
+                    Experienced in RESTful & GraphQL API design, database modeling, system optimization, and production-grade deployments.
                 </p>
             </div>
 
             <div class="intro-visual">
-                <img src="desk-visual.jpg" alt="Developer workstation" class="desk-img">
+                <img src="architecture.png" alt="Scalable Full-Stack Architecture Diagram" class="desk-img">
             </div>
         </div>
         
         <div class="container core-services">
-            <h3>Core Services:</h3>
+            <h3>Core Expertise:</h3>
+
             <div class="service-block">
-                <h4>Frontend & Mobile Development</h4>
-                <p>Building responsive, modern user interfaces with React, React Native, and Flutter. Focus on optimal user experience and state management.</p>
+                <h4>Frontend & Mobile Engineering</h4>
+                <p>
+                    Building responsive, high-performance user interfaces with strong state management and optimized rendering.
+                </p>
             </div>
             
             <div class="service-block">
-                <h4>Backend & API Design</h4>
-                <p>Designing and implementing robust, scalable RESTful and GraphQL APIs using Laravel, Node.js/Express, and NestJS.</p>
+                <h4>Backend & API Architecture</h4>
+                <p>
+                    Designing scalable APIs, secure authentication flows, and efficient data models for high-traffic systems.
+                </p>
             </div>
 
             <div class="service-block">
-                <h4>Cloud & DevOps</h4>
-                <p>Containerization with Docker, deploying applications to AWS (EC2, S3), and managing Git workflows for continuous integration.</p>
+                <h4>Cloud & Infrastructure</h4>
+                <p>
+                    Containerization, deployment automation, and production-ready system architecture.
+                </p>
             </div>
+
             <p class="cta-small">
                 Got something else you need my help with? <a href="#contact">Let's chat!</a>
             </p>
@@ -88,60 +99,137 @@
         <div class="container projects-grid">
             
             <div class="project-card">
-                <img src="project-api-placeholder.jpg" alt="API Platform" class="project-img">
-                <p class="project-title">Scalable RESTful API Platform</p>
-                <p class="project-description">Designed and implemented APIs with auth, optimization, and scalability.</p>
+                <img src="reforal.jpeg" alt="Reforal Dental Platform" class="project-img">
+                <p class="project-title">Reforal: Dental Referral Platform</p>
+                <p class="project-description">A streamlined, intuitive system for dental practitioners and labs to coordinate patient care through detailed, real-time referrals.</p>
             </div>
 
             <div class="project-card">
-                <img src="project-dashboard-placeholder.jpg" alt="Admin Dashboard" class="project-img">
-                <p class="project-title">Web Admin Dashboard</p>
-                <p class="project-description">Responsive admin interfaces with real-time API integration (React, Redux, Tailwind).</p>
+                <img src="ginto.jpeg" alt="Ginto Privilege Club" class="project-img">
+                <p class="project-title">Ginto Privilege Club</p>
+                <p class="project-description">A membership and referral rewards application featuring multi-tier earnings (Royale, Elite, Basic) and automated monthly payout tracking.</p>
             </div>
 
             <div class="project-card">
-                <img src="project-mobile-placeholder.jpg" alt="Mobile Apps" class="project-img">
-                <p class="project-title">Cross-Platform Mobile Applications</p>
-                <p class="project-description">Developed apps consuming REST/GraphQL services (React Native, Flutter).</p>
+                <img src="appzaloot.jpeg" alt="AppZaloot Social Platform" class="project-img">
+                <p class="project-title">AppZaloot: Geo-Social Community</p>
+                <p class="project-description">The next-generation community platform connecting users to local surroundings via geo-location, social feeds, and local business discovery.</p>
             </div>
 
             <div class="project-card">
-                <img src="project-devops-placeholder.jpg" alt="DevOps Workflow" class="project-img">
-                <p class="project-title">Cloud Deployment & DevOps Workflow</p>
-                <p class="project-description">Managed infrastructure, Docker containerization, and production-ready deployments on AWS.</p>
+                <img src="refuel.jpeg" alt="Refuel Mobile Delivery" class="project-img">
+                <p class="project-title">Refuel Mobile Delivery</p>
+                <p class="project-description">An on-site mobile fuel delivery platform managing logistics and fleet dispatch for on-demand refueling services across major urban centers.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="tulu.jpeg" alt="Tulu Car Marketplace" class="project-img">
+                <p class="project-title">Tulu: Car Marketplace</p>
+                <p class="project-description">A full-scale automotive platform for buying, trading, and selling vehicles with integrated search filters for body type, year, and price.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="treatment.jpeg" alt="Patient Treatment System" class="project-img">
+                <p class="project-title">Healthcare Management Dashboard</p>
+                <p class="project-description">A secure patient portal for managing treatment plans, vital signs, and medications with real-time feedback loops between doctors and patients.</p>
+            </div>
+
+            <div class="project-card">
+                <img src="wsg.jpeg" alt="WSG Energy Portal" class="project-img">
+                <p class="project-title">WSG Energy Services Portal</p>
+                <p class="project-description">A secure enterprise authentication gateway for energy service management, featuring streamlined access to infrastructure data and field reporting tools.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section p-0 tech-stack-section pb-5" id="techstack">
+        <div class="container">
+            <h3 class="section-title">Technology Stack</h3>
+
+            <div class="tech-icons-grid">
+                <!-- 1-19 Techs -->
+                <div class="tech-card"><i class="devicon-react-original colored"></i><p>React</p></div>
+                <div class="tech-card"><i class="devicon-angularjs-plain colored"></i><p>Angular</p></div>
+                <div class="tech-card"><i class="devicon-vuejs-plain colored"></i><p>Vue.js</p></div>
+                <div class="tech-card"><i class="devicon-bootstrap-plain colored"></i><p>Bootstrap</p></div>
+                <div class="tech-card"><i class="devicon-tailwindcss-plain colored"></i><p>Tailwind CSS</p></div>
+                <div class="tech-card"><i class="devicon-laravel-plain colored"></i><p>Laravel</p></div>
+                <div class="tech-card"><i class="devicon-nodejs-plain colored"></i><p>Node.js</p></div>
+                <div class="tech-card"><i class="devicon-nestjs-plain colored"></i><p>NestJS</p></div>
+                <div class="tech-card"><i class="devicon-php-plain colored"></i><p>PHP</p></div>
+                <div class="tech-card"><i class="devicon-python-plain colored"></i><p>Python</p></div>
+                <div class="tech-card"><i class="devicon-java-plain colored"></i><p>Java</p></div>
+                <div class="tech-card"><i class="devicon-cplusplus-plain colored"></i><p>C++</p></div>
+                <div class="tech-card"><i class="devicon-csharp-plain colored"></i><p>C#</p></div>
+                <div class="tech-card"><i class="devicon-docker-plain colored"></i><p>Docker</p></div>
+                <div class="tech-card"><i class="devicon-kubernetes-plain colored"></i><p>Kubernetes</p></div>
+                <div class="tech-card"><i class="devicon-amazonwebservices-original colored"></i><p>AWS</p></div>
+                <div class="tech-card"><i class="devicon-mysql-plain colored"></i><p>MySQL</p></div>
+                <div class="tech-card"><i class="devicon-postgresql-plain colored"></i><p>PostgreSQL</p></div>
+                <div class="tech-card"><i class="devicon-git-plain colored"></i><p>Git</p></div>
+
+                <div class="tech-card many-more pt-3">
+                    <h1>+</h1>
+                    <p>More</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="section secondary-testimonial-section">
         <div class="container">
-            <h4 class="quote">"Khenn's expert insights helped us improve our technical stack and product performance. He did a great job of prioritizing issues and providing actionable recommendations."</h4>
-            <p class="quote-source">- **John Smith**, Senior Developer</p>
+            <h4 class="quote">"Kobe really helped me understand how to improve my project and fix the tricky parts. He explained things in a way that actually made sense and gave advice I could actually use."</h4>
+            <p class="quote-source">- **Renz Bryan Paz**, Software Developer at Sercomm</p>
         </div>
     </section>
 
     <section class="section contact-section" id="contact">
         <div class="container">
             <h2 class="greeting">Let's Chat!</h2>
-            <p class="contact-description">I'd love to explore working together. Please share a high-level summary of the company and project requirements. I'll try to respond to all inquiries within 24 hours.</p>
+            <p class="contact-description">
+                I'd love to explore working together. Please click the button below to send me an email.
+            </p>
 
-            <form action="#" method="POST" class="contact-form">
-                <div class="form-group-inline">
-                    <input type="text" id="name" name="name" placeholder="Name" required>
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                </div>
-                <textarea id="message" name="message" rows="6" placeholder="Start typing your message here..." required></textarea>
-                <p class="form-note">By clicking Send Message, you agree to receive information about your inquiry.</p>
-                <button type="submit" class="btn secondary-btn">SEND MESSAGE</button>
-            </form>
+            <a href="mailto:kobellanes7@gmail.com?subject=Inquiry%20from%20Website" class="btn secondary-btn">
+                SEND EMAIL
+            </a>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <p>© 2025 Khenn Kobe Llanes | Software Engineer</p>
+            <p>© 2026 Khenn Kobe Llanes | Full Stack Engineer</p>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        const toggleButton = document.getElementById('dark-mode-toggle');
+        const updateIcon = () => {
+            if (document.body.classList.contains('dark-mode')) {
+                toggleButton.textContent = '☀️';
+            } else {
+                toggleButton.textContent = '🌙';
+            }
+        };
+
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            
+            if(document.body.classList.contains('dark-mode')){
+                localStorage.setItem('dark-mode', 'enabled');
+            } else {
+                localStorage.setItem('dark-mode', 'disabled');
+            }
+            updateIcon();
+        });
+
+        if(localStorage.getItem('dark-mode') === 'enabled'){
+            document.body.classList.add('dark-mode');
+        }
+        
+        updateIcon();
+    </script>
 </body>
 </html>
