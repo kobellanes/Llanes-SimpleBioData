@@ -276,6 +276,7 @@ h2.greeting {
     transition: all 0.4s ease;
     border: 1px solid #eee;
     display: block;
+    border-radius: 10px;
 }
 
 .project-img:hover {
