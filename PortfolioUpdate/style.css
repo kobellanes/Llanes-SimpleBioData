@@ -449,6 +449,11 @@ body.dark-mode .footer {
     color: #f9f1e7;
 }
 
+body.dark-mode .footer p{
+    color: #f9f1e7;
+}
+
+
 body.dark-mode .btn {
     background-color: #ffd166;
     color: #2c251a; 
@@ -498,4 +503,57 @@ body.dark-mode .desk-img {
 
 body.dark-mode .navbar {
     border-bottom: 1px solid rgba(255, 209, 102, 0.2);
+}
+
+/* --- Hamburger Menu Styles --- */
+.menu-toggle {
+    display: none; /* Hidden on desktop */
+    flex-direction: column;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    gap: 5px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333; /* Dark mode color handled via body.dark-mode below */
+    transition: 0.3s;
+}
+
+body.dark-mode .bar {
+    background-color: #f9f1e7;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Show on mobile */
+    }
+
+    .nav-links {
+        display: none; /* Hide links initially */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.98);
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    }
+
+    body.dark-mode .nav-links {
+        background-color: rgba(30, 27, 22, 0.98);
+    }
+
+    .nav-links.active {
+        display: flex; /* Show when toggle is clicked */
+    }
+
+    .nav-links a {
+        margin: 15px 0;
+        font-size: 1.1rem;
+    }
 }
